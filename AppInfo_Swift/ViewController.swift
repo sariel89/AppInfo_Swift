@@ -15,7 +15,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view, typically from a nib
+        
         tableType.delegate = self;
         tableType.dataSource = self;
         tableType.registerClass(UITableViewCell().classForCoder, forCellReuseIdentifier: "cell")
@@ -41,7 +42,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         case 1 :
             // 设备信息
-            
+            self.presentViewController(DeviceInfoController(), animated: true, completion: nil)
             break
             
         case 2 :

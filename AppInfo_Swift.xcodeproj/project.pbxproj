@@ -15,6 +15,7 @@
 		0472FF161C7AA2AB00C8A80E /* PublicContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472FF151C7AA2AB00C8A80E /* PublicContent.swift */; };
 		0472FF1C1C7AB21400C8A80E /* SystemFontController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472FF1B1C7AB21400C8A80E /* SystemFontController.swift */; };
 		0472FF1E1C7ADE1000C8A80E /* EasyTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472FF1D1C7ADE1000C8A80E /* EasyTipView.swift */; };
+		0472FF221C7B00F200C8A80E /* DeviceInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472FF211C7B00F200C8A80E /* DeviceInfoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0472FF151C7AA2AB00C8A80E /* PublicContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicContent.swift; sourceTree = "<group>"; };
 		0472FF1B1C7AB21400C8A80E /* SystemFontController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemFontController.swift; sourceTree = "<group>"; };
 		0472FF1D1C7ADE1000C8A80E /* EasyTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyTipView.swift; sourceTree = "<group>"; };
+		0472FF211C7B00F200C8A80E /* DeviceInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		0472FF191C7AB19200C8A80E /* DeviceInfo */ = {
 			isa = PBXGroup;
 			children = (
+				0472FF211C7B00F200C8A80E /* DeviceInfoController.swift */,
 			);
 			path = DeviceInfo;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0472FF061C7A9F7A00C8A80E /* ViewController.swift in Sources */,
+				0472FF221C7B00F200C8A80E /* DeviceInfoController.swift in Sources */,
 				0472FF1C1C7AB21400C8A80E /* SystemFontController.swift in Sources */,
 				0472FF1E1C7ADE1000C8A80E /* EasyTipView.swift in Sources */,
 				0472FF041C7A9F7A00C8A80E /* AppDelegate.swift in Sources */,
