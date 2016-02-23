@@ -133,7 +133,20 @@ class DeviceInfoController: UITableViewController {
         }
         arrData.addObject(["key":"batteryState", "value":batteryState])
         
-        print(deviceInfo)
+        let screen : UIScreen = UIScreen.mainScreen()
+        arrData.addObject(["key":"bounds", "value":"\(screen.bounds)"])
+        arrData.addObject(["key":"scale", "value":"\(screen.scale)"])
+        
+        arrData.addObject(["key":"availableModes", "value":"\(screen.availableModes)"])
+        arrData.addObject(["key":"preferredMode", "value":"\(screen.preferredMode)"])
+        arrData.addObject(["key":"currentMode", "value":"\(screen.currentMode)"])
+        arrData.addObject(["key":"overscanCompensation", "value":"\(screen.overscanCompensation)"])
+        if #available(iOS 9.0, *) {
+            arrData.addObject(["key":"overscanCompensationInsets", "value":"\(screen.overscanCompensationInsets)"])
+        }
+        arrData.addObject(["key":"mirroredScreen", "value":"\(screen.mirroredScreen)"])
+        
+        
         // 重新刷新
         self.tableView.reloadData()
     }

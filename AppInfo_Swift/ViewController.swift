@@ -47,7 +47,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         case 2 :
             // App 信息
-            
+            self.presentViewController(AppInfoController(), animated: true, completion: nil)
             break
         default :
             // 其它情况
