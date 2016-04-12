@@ -1,0 +1,42 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "579B89685C26B4C373624AEBFE9E8D9ABED5A824",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "53e7ce3f-2b49-484d-b894-5e3a75011bfa++9345" : {
+
+    },
+    "53e7ce3f-2b49-484d-b894-5e3a75011bfa++8580" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "579B89685C26B4C373624AEBFE9E8D9ABED5A824" : 0,
+    "53e7ce3f-2b49-484d-b894-5e3a75011bfa++9345" : 0,
+    "53e7ce3f-2b49-484d-b894-5e3a75011bfa++8580" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9DC118A7-36E4-40ED-971E-915BD5551614",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "579B89685C26B4C373624AEBFE9E8D9ABED5A824" : "AppInfo_swift\/",
+    "53e7ce3f-2b49-484d-b894-5e3a75011bfa++9345" : "AppInfo_swift\/AppInfo_Swift\/Lib\/SBJson\/",
+    "53e7ce3f-2b49-484d-b894-5e3a75011bfa++8580" : "AppInfo_swift\/AppInfo_Swift\/Lib\/MJExtension\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AppInfo_Swift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AppInfo_Swift.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/gasgoo-vss.gas.cn:666\/svn\/Mobile",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "53e7ce3f-2b49-484d-b894-5e3a75011bfa++8580"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/gasgoo-vss.gas.cn:666\/svn\/Mobile",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "53e7ce3f-2b49-484d-b894-5e3a75011bfa++9345"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sariel89\/AppInfo_Swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "579B89685C26B4C373624AEBFE9E8D9ABED5A824"
+    }
+  ]
+}

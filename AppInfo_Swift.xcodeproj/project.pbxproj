@@ -37,6 +37,7 @@
 		0472FF161C7AA2AB00C8A80E /* PublicContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472FF151C7AA2AB00C8A80E /* PublicContent.swift */; };
 		0472FF1C1C7AB21400C8A80E /* SystemFontController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472FF1B1C7AB21400C8A80E /* SystemFontController.swift */; };
 		0472FF221C7B00F200C8A80E /* DeviceInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472FF211C7B00F200C8A80E /* DeviceInfoController.swift */; };
+		04B32C251CBD3BE700820E34 /* list.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04B32C241CBD3BE700820E34 /* list.txt */; };
 		04E656671C7C3CF500920ACA /* AppInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E656661C7C3CF500920ACA /* AppInfoController.swift */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,8 @@
 		0472FF151C7AA2AB00C8A80E /* PublicContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicContent.swift; sourceTree = "<group>"; };
 		0472FF1B1C7AB21400C8A80E /* SystemFontController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemFontController.swift; sourceTree = "<group>"; };
 		0472FF211C7B00F200C8A80E /* DeviceInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfoController.swift; sourceTree = "<group>"; };
+		04B32C241CBD3BE700820E34 /* list.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = list.txt; sourceTree = "<group>"; };
+		04B32C271CBD439300820E34 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		04E656661C7C3CF500920ACA /* AppInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +113,7 @@
 		045D92211CBD170100583B5B /* ChinaCityList */ = {
 			isa = PBXGroup;
 			children = (
+				04B32C241CBD3BE700820E34 /* list.txt */,
 				045D92221CBD173800583B5B /* SCChinaCityListController.swift */,
 				045D92241CBD176400583B5B /* SCChinaCityListModel.swift */,
 				045D92261CBD17A500583B5B /* SCChinaCityListHandle.swift */,
@@ -120,6 +124,7 @@
 		045D92281CBD187700583B5B /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				04B32C271CBD439300820E34 /* Header.h */,
 				045D922B1CBD19AE00583B5B /* MJExtension */,
 				045D92431CBD19AE00583B5B /* SBJson */,
 				045D92291CBD187700583B5B /* EasyTipView.swift */,
@@ -306,6 +311,7 @@
 			files = (
 				0472FF0E1C7A9F7A00C8A80E /* LaunchScreen.storyboard in Resources */,
 				0472FF0B1C7A9F7A00C8A80E /* Assets.xcassets in Resources */,
+				04B32C251CBD3BE700820E34 /* list.txt in Resources */,
 				0472FF091C7A9F7A00C8A80E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +468,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sariel.AppInfo-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Volumes/HDD/Workspace/SarielProject/GitHub/AppInfo_swift/AppInfo_Swift/Lib/Header.h;
 			};
 			name = Debug;
 		};
@@ -474,6 +481,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sariel.AppInfo-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Volumes/HDD/Workspace/SarielProject/GitHub/AppInfo_swift/AppInfo_Swift/Lib/Header.h;
 			};
 			name = Release;
 		};

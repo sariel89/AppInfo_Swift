@@ -11,7 +11,11 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var tableType : UITableView = UITableView(frame: CGRectMake(0, 0, AppWindowWidth, AppWindowHeight), style: UITableViewStyle.Plain);
-    var arrData = ["Font", "Device Info", "App Info"]
+    var arrData = [["name":"Font", "value": "SystemFontController"],
+                   ["name": "Device Info", "value": "SystemFontController"],
+                   ["name": "App Info", "value": "SystemFontController"],
+                   ["name": "China City List", "value":"SCChinaCityListController"]]
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +37,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         print(arrData[indexPath.row])
         
+//        let dic = arrData[indexPath.row]
+//        let controller : Class
+//        self.presentViewController(NSClassFromString(dic["value"]!)(), animated: true, completion: nil)
+        
         switch indexPath.row {
         case 0 :
             // 字体
@@ -49,6 +57,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             // App 信息
             self.presentViewController(AppInfoController(), animated: true, completion: nil)
             break
+        case 3:
+            // 全国行政区信息
+            self.presentViewController(SCChinaCityListController(), animated: true, completion: nil)
+            break
         default :
             // 其它情况
             
@@ -58,7 +70,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell : UITableViewCell! = tableView.dequeueReusableCellWithIdentifier("cell")
-        cell.textLabel?.text = arrData[indexPath.row]
+        cell.textLabel?.text = arrData[indexPath.row]["name"]
         cell.textLabel?.textAlignment = NSTextAlignment.Center
         return cell;
     }
