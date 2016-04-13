@@ -11,5 +11,6 @@
 
 #import "MJExtension.h"
 #import "SBJson4.h"
+#import "SCChinaCityListModel.h"
 
 #endif /* Header_h */

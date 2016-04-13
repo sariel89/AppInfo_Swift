@@ -9,13 +9,16 @@
 import UIKit
 
 class SCChinaCityListController: UIViewController {
-
+    
+    var arr = Array<SCChinaCityListModel>（）
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         let handle = SCChinaCityListHandle()
-        handle.handleCityListToArray()
+        let arr : Array<SCChinaCityListModel> = handle.getCityList()
+        
     }
 
     override func didReceiveMemoryWarning() {

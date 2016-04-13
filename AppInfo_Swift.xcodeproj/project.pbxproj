@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045A34DE1CBE46FC009DFC8D /* cityList.txt in Resources */ = {isa = PBXBuildFile; fileRef = 045A34DD1CBE46FC009DFC8D /* cityList.txt */; };
+		045A34E11CBE4789009DFC8D /* SCChinaCityListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 045A34E01CBE4789009DFC8D /* SCChinaCityListModel.m */; };
 		045D92231CBD173800583B5B /* SCChinaCityListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D92221CBD173800583B5B /* SCChinaCityListController.swift */; };
-		045D92251CBD176400583B5B /* SCChinaCityListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D92241CBD176400583B5B /* SCChinaCityListModel.swift */; };
 		045D92271CBD17A500583B5B /* SCChinaCityListHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D92261CBD17A500583B5B /* SCChinaCityListHandle.swift */; };
 		045D922A1CBD187700583B5B /* EasyTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D92291CBD187700583B5B /* EasyTipView.swift */; };
 		045D92531CBD19AE00583B5B /* MJDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 045D922D1CBD19AE00583B5B /* MJDictionaryCache.m */; };
@@ -42,8 +43,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045A34DD1CBE46FC009DFC8D /* cityList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cityList.txt; sourceTree = "<group>"; };
+		045A34DF1CBE4789009DFC8D /* SCChinaCityListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCChinaCityListModel.h; sourceTree = "<group>"; };
+		045A34E01CBE4789009DFC8D /* SCChinaCityListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCChinaCityListModel.m; sourceTree = "<group>"; };
 		045D92221CBD173800583B5B /* SCChinaCityListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCChinaCityListController.swift; sourceTree = "<group>"; };
-		045D92241CBD176400583B5B /* SCChinaCityListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCChinaCityListModel.swift; sourceTree = "<group>"; };
 		045D92261CBD17A500583B5B /* SCChinaCityListHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCChinaCityListHandle.swift; sourceTree = "<group>"; };
 		045D92291CBD187700583B5B /* EasyTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyTipView.swift; sourceTree = "<group>"; };
 		045D922C1CBD19AE00583B5B /* MJDictionaryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDictionaryCache.h; sourceTree = "<group>"; };
@@ -113,10 +116,12 @@
 		045D92211CBD170100583B5B /* ChinaCityList */ = {
 			isa = PBXGroup;
 			children = (
+				045A34DD1CBE46FC009DFC8D /* cityList.txt */,
 				04B32C241CBD3BE700820E34 /* list.txt */,
 				045D92221CBD173800583B5B /* SCChinaCityListController.swift */,
-				045D92241CBD176400583B5B /* SCChinaCityListModel.swift */,
 				045D92261CBD17A500583B5B /* SCChinaCityListHandle.swift */,
+				045A34DF1CBE4789009DFC8D /* SCChinaCityListModel.h */,
+				045A34E01CBE4789009DFC8D /* SCChinaCityListModel.m */,
 			);
 			path = ChinaCityList;
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 				0472FF0B1C7A9F7A00C8A80E /* Assets.xcassets in Resources */,
 				04B32C251CBD3BE700820E34 /* list.txt in Resources */,
 				0472FF091C7A9F7A00C8A80E /* Main.storyboard in Resources */,
+				045A34DE1CBE46FC009DFC8D /* cityList.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,12 +341,12 @@
 				045D925C1CBD19AE00583B5B /* NSObject+MJProperty.m in Sources */,
 				045D925E1CBD19AE00583B5B /* SBJson4Parser.m in Sources */,
 				045D92591CBD19AE00583B5B /* NSObject+MJClass.m in Sources */,
-				045D92251CBD176400583B5B /* SCChinaCityListModel.swift in Sources */,
 				045D92571CBD19AE00583B5B /* MJPropertyKey.m in Sources */,
 				045D92641CBD19AE00583B5B /* SBJson4Writer.m in Sources */,
 				045D92621CBD19AE00583B5B /* SBJson4StreamWriter.m in Sources */,
 				045D92551CBD19AE00583B5B /* MJFoundation.m in Sources */,
 				045D92581CBD19AE00583B5B /* MJPropertyType.m in Sources */,
+				045A34E11CBE4789009DFC8D /* SCChinaCityListModel.m in Sources */,
 				045D925F1CBD19AE00583B5B /* SBJson4StreamParser.m in Sources */,
 				045D92231CBD173800583B5B /* SCChinaCityListController.swift in Sources */,
 				045D92631CBD19AE00583B5B /* SBJson4StreamWriterState.m in Sources */,
@@ -468,7 +474,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sariel.AppInfo-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Volumes/HDD/Workspace/SarielProject/GitHub/AppInfo_swift/AppInfo_Swift/Lib/Header.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AppInfo_Swift/Lib/Header.h";
 			};
 			name = Debug;
 		};
@@ -481,7 +487,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sariel.AppInfo-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Volumes/HDD/Workspace/SarielProject/GitHub/AppInfo_swift/AppInfo_Swift/Lib/Header.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AppInfo_Swift/Lib/Header.h";
 			};
 			name = Release;
 		};

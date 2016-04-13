@@ -23,20 +23,24 @@ class SCChinaCityListHandle: NSObject {
             print(arrOld.count)
             
             // 开始处理数据，
-            let arrP = []
-            let arrCity = []
-            let arrCounty = []
+            var arrP : Array = [["name": "value" as AnyObject]]
+            var arrCity : Array = [["name": "value" as AnyObject]]
+            var arrCounty : Array = [["name": "value" as AnyObject]]
+            
+            arrP.removeAll()
+            arrCity.removeAll()
+            arrCounty.removeAll()
             
             for dic : NSDictionary in arrOld {
                 switch dic["level"]!.integerValue {
                 case 1:
-                    arrP.arrayByAddingObject(dic)
+                    arrP.append(dic as! Dictionary<String, AnyObject>)
                     break
                     case 2:
-                    arrCity.arrayByAddingObject(dic)
+                    arrCity.append(dic as! Dictionary<String, AnyObject>)
                     break
                     case 3:
-                    arrCounty.arrayByAddingObject(dic)
+                    arrCounty.append(dic as! Dictionary<String, AnyObject>)
                     break
                 default:
                     break
@@ -45,27 +49,46 @@ class SCChinaCityListHandle: NSObject {
             
             // 把县级放入到市级
             for var i = 0; i < arrCounty.count; i++ {
-                let dic : NSDictionary = arrCounty[i] as! NSDictionary
+                let dic : Dictionary = arrCounty[i] as Dictionary
                 
                 for var j = 0; j < arrCity.count; j++ {
-                    let dicTemp:NSDictionary = arrCity[j] as! NSDictionary
-                    if dicTemp["code"]!.integerValue == dic["parentCode"]!.integerValue  {
-                        if (dicTemp["childList"] != nil) {
-                            dicTemp["childList"]?.arrayByAddingObject(dic)
+                    var dicTemp:Dictionary = arrCity[j] as Dictionary
+                    if dicTemp["code"]?.integerValue == dic["parentCode"]?.integerValue  {
+                        if ((dicTemp["childList"]) != nil) {
+                            var arrTemp : Array = dicTemp["childList"] as! Array<Dictionary<String, AnyObject>>
+                            arrTemp.append(dic)
+                            dicTemp["childList"] = arrTemp
                         } else {
-                            dicTemp.setValue([dic], forKey: "childList")
+                            dicTemp["childList"] = dic
                         }
-                        arrCity.repla
                         break
                     }
+                    arrCity[j] = dicTemp 
                 }
             }
             
             // 把市级放入到省级
-            
+            for var i = 0; i < arrCity.count; i++ {
+                let dic : Dictionary = arrCity[i] as Dictionary
+                
+                for var j = 0; j < arrP.count; j++ {
+                    var dicTemp:Dictionary = arrP[j] as Dictionary
+                    if dicTemp["code"]?.integerValue == dic["parentCode"]?.integerValue  {
+                        if (dicTemp["childList"] != nil) {
+                            var arrTemp : Array = dicTemp["childList"] as! Array<Dictionary<String, AnyObject>>
+                            arrTemp.append(dic)
+                            dicTemp.updateValue(arrTemp, forKey: "childList")
+                        } else {
+                            dicTemp["childList"] = [dic]
+                        }
+                        break
+                    }
+                    arrP[j] = dicTemp
+                }
+            }
             
             // 把 array转成string 保存起来
-            
+            print(arrP)
             
             
         } catch {
@@ -73,6 +96,23 @@ class SCChinaCityListHandle: NSObject {
         }
     
         return []
+    }
+    
+    func getCityList() -> Array<SCChinaCityListModel> {
+        var arrNew = Array<SCChinaCityListModel>()
+        
+        let path : String = NSBundle.mainBundle().pathForResource("cityList", ofType: "txt")!
+        do {
+            let str : String = try String.init(contentsOfFile: path, encoding: NSUTF8StringEncoding)
+            let arrOld : Array = self.objectFromJson(str) as! Array<NSDictionary>
+            for i in 0 ... (arrOld.count - 1) {
+                arrNew.append(SCChinaCityListModel.mj_objectWithKeyValues(arrOld[i]))
+            }
+        } catch {
+            print(error)
+        }
+        
+        return arrNew
     }
     
     func jsonString(obj:AnyObject) -> String {
