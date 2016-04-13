@@ -10,6 +10,6 @@
 
 @implementation SCChinaCityListModel
 +(NSDictionary *)objectClassInArray{
-    return @{@"childList":@"SCChinaDistrictModel"};
+    return @{@"childList":@"SCChinaCityListModel"};
 }
 @end

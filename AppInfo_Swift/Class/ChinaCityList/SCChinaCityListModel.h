@@ -16,5 +16,8 @@
 @property (nonatomic, copy) NSString *name;             // 名称
 @property (nonatomic, copy) NSString *latitude;         // 纬度
 @property (nonatomic, copy) NSString *longitude;        // 经度
+
 @property (nonatomic, copy) NSMutableArray *childList;         // 下一级城市，默认为nil
+@property (nonatomic, assign) BOOL isSelected;
+@property (nonatomic, assign) BOOL isOpen;
 @end

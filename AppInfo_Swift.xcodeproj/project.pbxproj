@@ -39,6 +39,8 @@
 		0472FF1C1C7AB21400C8A80E /* SystemFontController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472FF1B1C7AB21400C8A80E /* SystemFontController.swift */; };
 		0472FF221C7B00F200C8A80E /* DeviceInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472FF211C7B00F200C8A80E /* DeviceInfoController.swift */; };
 		04B32C251CBD3BE700820E34 /* list.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04B32C241CBD3BE700820E34 /* list.txt */; };
+		04B758CB1CBE75A100FCD4A2 /* SCChinaCityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B758CA1CBE75A100FCD4A2 /* SCChinaCityListCell.swift */; };
+		04B758CE1CBE77FE00FCD4A2 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B758CD1CBE77FE00FCD4A2 /* Tools.swift */; };
 		04E656671C7C3CF500920ACA /* AppInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E656661C7C3CF500920ACA /* AppInfoController.swift */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +101,8 @@
 		0472FF211C7B00F200C8A80E /* DeviceInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfoController.swift; sourceTree = "<group>"; };
 		04B32C241CBD3BE700820E34 /* list.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = list.txt; sourceTree = "<group>"; };
 		04B32C271CBD439300820E34 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		04B758CA1CBE75A100FCD4A2 /* SCChinaCityListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCChinaCityListCell.swift; sourceTree = "<group>"; };
+		04B758CD1CBE77FE00FCD4A2 /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		04E656661C7C3CF500920ACA /* AppInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +126,7 @@
 				045D92261CBD17A500583B5B /* SCChinaCityListHandle.swift */,
 				045A34DF1CBE4789009DFC8D /* SCChinaCityListModel.h */,
 				045A34E01CBE4789009DFC8D /* SCChinaCityListModel.m */,
+				04B758CA1CBE75A100FCD4A2 /* SCChinaCityListCell.swift */,
 			);
 			path = ChinaCityList;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 		0472FF171C7AB19200C8A80E /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				04B758CC1CBE77E400FCD4A2 /* Tools */,
 				045D92211CBD170100583B5B /* ChinaCityList */,
 				0472FF181C7AB19200C8A80E /* AppInfo */,
 				0472FF191C7AB19200C8A80E /* DeviceInfo */,
@@ -254,6 +260,14 @@
 				0472FF1B1C7AB21400C8A80E /* SystemFontController.swift */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		04B758CC1CBE77E400FCD4A2 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				04B758CD1CBE77FE00FCD4A2 /* Tools.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +352,7 @@
 				045D922A1CBD187700583B5B /* EasyTipView.swift in Sources */,
 				045D92541CBD19AE00583B5B /* MJExtensionConst.m in Sources */,
 				0472FF1C1C7AB21400C8A80E /* SystemFontController.swift in Sources */,
+				04B758CE1CBE77FE00FCD4A2 /* Tools.swift in Sources */,
 				045D925C1CBD19AE00583B5B /* NSObject+MJProperty.m in Sources */,
 				045D925E1CBD19AE00583B5B /* SBJson4Parser.m in Sources */,
 				045D92591CBD19AE00583B5B /* NSObject+MJClass.m in Sources */,
@@ -356,6 +371,7 @@
 				045D925D1CBD19AE00583B5B /* NSString+MJExtension.m in Sources */,
 				04E656671C7C3CF500920ACA /* AppInfoController.swift in Sources */,
 				0472FF041C7A9F7A00C8A80E /* AppDelegate.swift in Sources */,
+				04B758CB1CBE75A100FCD4A2 /* SCChinaCityListCell.swift in Sources */,
 				0472FF161C7AA2AB00C8A80E /* PublicContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
