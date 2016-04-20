@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PWDModel.h"
 
 @interface HandleDatas : NSObject
 
+// 保存数据
++ (BOOL) saveInfo:(PWDModel *)model;
+
+// 获取数据
++ (NSArray *)getModelWithKey:(NSString *)key;
+
+// 获取全部数据
++ (NSArray *)getAllDatas;
 @end

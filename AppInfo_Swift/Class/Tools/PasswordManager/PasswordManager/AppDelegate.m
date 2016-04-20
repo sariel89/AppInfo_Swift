@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WebSiteListController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // 初始化root页面
+    [self initRootController];
     return YES;
 }
 
@@ -122,6 +126,15 @@
             abort();
         }
     }
+}
+
+#pragma mark - init root viewController
+- (void) initRootController {
+    WebSiteListController *vc = [[WebSiteListController alloc] init];
+    self.navigateionController = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = self.navigateionController;
+    [self.window makeKeyAndVisible];
 }
 
 @end
